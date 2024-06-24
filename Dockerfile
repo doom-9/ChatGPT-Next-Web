@@ -31,9 +31,10 @@ WORKDIR /app
 RUN apk add proxychains-ng
 
 ENV PROXY_URL=""
-ENV OPENAI_API_KEY=""
+ENV OPENAI_API_KEY="sk-pSG7dc42a67abeb51cc9e144ac4d78ac00ca6386e4biwGed"
+ENV BASE_URL="https://api.gptsapi.net"
 ENV GOOGLE_API_KEY=""
-ENV CODE=""
+ENV CODE="asdf.1234"
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
